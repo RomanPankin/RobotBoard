@@ -1,0 +1,14 @@
+{
+  "name": "RobotCoding",
+  "version": "1.0.0",
+  "description": "This is a project for Pixel Fusion",
+  "author": "Roman Pankin",
+  "scripts": {
+    "start": "jasmine",
+    "test": "jasmine"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine": "^2.6.0"
+  }
+}
