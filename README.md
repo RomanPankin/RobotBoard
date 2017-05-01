@@ -65,3 +65,7 @@ LEFT
 MOVE
 REPORT
 Output: 3,3,NORTH
+
+# Launch
+npm install
+jasmine
