@@ -33,6 +33,17 @@ describe('Tests for RobotBoard.', () => {
             // Illegal directions
             {in: "2,2,TEST", out: null},
 
+            // Illegal coordinates
+            {in: "0,,EAST", out: null},
+            {in: "0,2.2,EAST", out: null},
+            {in: "0,Z,EAST", out: null},
+            {in: "0,-,EAST", out: null},
+
+            {in: ",0,EAST", out: null},
+            {in: "2.2,0,EAST", out: null},
+            {in: "Z,0,EAST", out: null},
+            {in: "-,0,EAST", out: null},
+
             // Wrong formats
             {in: "222", out: null},
             {in: "TEST", out: null},

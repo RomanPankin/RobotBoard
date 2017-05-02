@@ -83,11 +83,12 @@
         }
 
         _placeRobot(position) {
-            let info = position.split(',');
+            let info = /^(\d+),(\d+),(.*)$/.exec( position );
+            if ( info == null ) return;
 
-            let x = parseInt(info[0]);
-            let y = parseInt(info[1]);
-            let direction = DIRECTIONS[info[2]];
+            let x = parseInt(info[1]);
+            let y = parseInt(info[2]);
+            let direction = DIRECTIONS[info[3]];
 
             if (!this._possiblePosition(x,y) || !direction) return;
 
